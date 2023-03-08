@@ -31,12 +31,58 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
 - **RQ1** What are the profile characterisitics of ChatGPT early users?
 - **RQ2** What are the dominant topics that emerge from the tweets about ChatGPT?
 - **RQ3** What are the sentiments that are associated with the tweets about ChatGPT?
-
+<hr>
 
 ## METHODOLOGY
+
 ### TOOLS
+<table style="width:100%">
+  <tr>
+    <th>Task</th>
+    <th>Technique Description</th> 
+    <th>Tools/Packages Used</th>
+  </tr>
+  <tr>
+    <td>Data Collection</td>
+    <td>Scraping tweets from Twitter </td> 
+    <td>snscrape</td>
+  </tr>
+  <tr>
+    <td>Data Preprocessing</td>
+    <td>Duplication removal, lowercasing, noise removal (punctuation, stopwords, URLs, @users), lemmatization</td> 
+    <td>re, NLTK, pandas, numpy</td>
+  </tr>
+  <tr>
+    <td>Feature Engineering</td>
+    <td>Retrieving geographical info from a user's profile location; 
+      retrieving datetime info from tweet timestamps </td> 
+    <td>geopy, datetime</td>
+  </tr>
+  <tr>
+    <td>Topic Modeling</td>
+    <td>Identifying topics using the Latent Dirichlet Allocation (LDA) modelling</td> 
+    <td>pyLDAvis, gensim</td>
+  </tr>
+  <tr>
+    <td>Sentiment Analysis</td>
+    <td>Quantitative sentiment analysis of each topic via rule-based and deep learning based model</td> 
+    <td>VADER, roBERTa, scipy, torch</td>
+  </tr>
+  <tr>
+    <td>Data Visualization</td>
+    <td>Multi-attribute plots</td> 
+    <td>matplotlib, seaborn, wordcloud, PowerBI</td>
+  </tr>
+  <tr>
+    <td>Environments & Platforms</td>
+    <td> </td> 
+    <td>Google Colab, Jupyter Notebook, Twitter</td>
+  </tr>
+</table><br>
+
 
 ### DATA-COLLECTION
+
 
 ### DATA-PREPROCESSING
 
