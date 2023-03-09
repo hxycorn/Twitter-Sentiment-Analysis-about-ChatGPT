@@ -82,9 +82,59 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
 
 
 ### DATA-COLLECTION
+<table style="width:100%">
+  <tr>
+    <th>Method</th>
+    <th>Notes</th> 
+  </tr>
+  <tr>
+    <td>Tweepy</td>
+    <td>3200 tweets; no historical data</td> 
+  </tr>
+  <tr>
+    <td>GetOldTweets3</td>
+    <td>Twitter has removed the endpoint the GetOldTweets3 uses </td> 
+  </tr>
+  <tr>
+    <td>Twint</td>
+    <td>Twitter throws a more strict device + IP-ban after a certain amount of queries</td> 
+  </tr>
+  <tr>
+    <td><b>snscrape</b></td>
+    <td><b>Scrapped 1.25M tweets - 832,924 English tweets</b></td> 
+  </tr>
+</table>
 
+<h4> Data Collection: Identifying ChatGPT Content </h4>
+
+<li>Package used: snscrape</li>
+<li>Language: English</li>
+<li>Keywords: ChatGPT</li>
+<li>Timeframe: December 1, 2022 to January 31, 2023</li>
+<li>Features: User ID, User Name, User Verification, User Location, User Followers, Tweet Text, Posted Timestamp, and Posed Language</li>
+<li>Number of tweets collected = 1,255,518</li>
+<li>December - 474,572 tweets | January - 780,946 tweets</li>
 
 ### DATA-PREPROCESSING
+<b> Data Cleaning </b> 
+- Merged collected datasets into a single dataframe and removed duplicate tweets.
+- Dropped 17 tweets that were missing timestamp values.
+- Filled missing values in 'Location' column with the term "Unknown". 
+
+
+**Feature Engineering**
+- Utilized the geopy package to obtain the geographic information (specifically, the country) from the profile location associated with each user..
+- Extracted both the date posted and the week from the timestamp by means of the datetime package, subsequently discarding the timestamp column.
+
+
+**English Tweet Text Preprocessing**
+- Filtered English-tweets and saved them to a new dataframe.
+- Converted all tweets that represented the same word in different cases (e.g. ChatGPT and CHATGPT) to the same lowercase form (e.g.chatgpt).
+- Removed noise such as punctuation, URLs, Twitter handles using the "re" library.
+- Removed stopwords using the NLTK English stopwords list, and eliminated tokens that were too short (less than three characters) or too long (over 50 characters). 
+- Exracted frequently occurring continuous sequence of 2 words (bigram) and 3 words (trigram) within the corpus.
+- Performed WordNet-based lemmatization using the NLTK pacakge to transform each word into its base or dictionary form. 
+
 
 ### DATA-MODELING
 
