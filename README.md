@@ -25,7 +25,7 @@ ChatGPT is an artificial intelligence chatbot developed by OpenAI and launched i
 <hr>
 
 ## OBJECTIVE
-Using a mixed-method approach, analyze tweets from December 2022 to January 2023 that mention ChatGPT and express diverse and unstructures opinions. Identify the main topics and sentiments of the conversations and examine perception of early ChatGPT users.
+Using a mixed-method approach, analyze tweets from December 2022 to January 2023 that mention ChatGPT and express diverse and unstructures opinions. Identify the main topics and sentiments of the conversations and examine perception of early ChatGPT users. We assert this identification will allow us to understand and assess ChatGPT's capability, effectiveness, and facing challenges. 
 
 **Research Questions**
 - **RQ1** What are the profile characterisitics of ChatGPT early users?
@@ -137,8 +137,27 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
 
 
 ### DATA-MODELING
+**Unsupervised LDA**
+
+The unsupervised Latent Dirichlet Allocation (LDA) modelling technique was applied to extract a set of key ChatGPT topics from the collected tweets. 
+- Generated a dictionary and corpus containing all the tweet texts, filtering out extreme words with low/high appearing frequency of occurence (occuring in less than 10 tweets or more than 50% of tweets).
+- Inplemented LDA using the LdaMulticore module in Gensim library. 
+- Conducted a series of experiment by varing the number of topics (N) from 2 to 40, and obtained a relatively high coherence score for the range of 10 to 18 topics. 
+- Executed LDA with N=10 and identified 10 topics based on the highly relevant tweets for each topic. 
+
+**Sentiment Analysis**
+
+Sentiment analysis is an approach to identifying the emotional tone behind textual data. Various algorithms (models) are available for sentiment analysis tasks, and each has its pros and cons, such as: 
+
+- **Rule-based (lexicon-based):** Such kinds of models have their own dictionaries (lexicons) of words or emojis with positive or negative weights. These algorithms count the number of positive and negative words in the given text. If the number of positives is more than the negatives, they return a positive sentiment. If both are equal, they return a neutral sentiment. Rules or dictionaries of words can be customized. And these kinds of algorithms do not require any model training.
+- **Supervised Machine learning:** These algorithms are fed with many labeled text data until they can learn patterns or the essence of the statement instead of clearly defined rules. However, for this approach labeled data is required, which is not available in our study. 
+- **Unsupervised Deep Learning:** Such kinds of algorithms are able to learn patterns through multiple layers from unstructured and unlabeled data to perform sentiment analysis using various learning mechanisms, e.g. self-attention.
+
+In this study, we used both VADER (rule-based model) from the NLTK library and Twitter-roBERTa (deep learning based)from the TRANSFORMERS package to examine the early users' attitude towards ChatGPT.
+
 
 ## DATA-VISUALIZATION
+
 
 ## RESULTS 
 
