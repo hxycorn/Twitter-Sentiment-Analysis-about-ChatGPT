@@ -10,8 +10,10 @@ A quantitative study on over 1.25 million tweets about ChatGPT, employed data sc
   - [Data Collection](#data-collection)
   - [Data Preprocessing](#data-preprocessing)
   - [Data Modeling](#data-modeling)
-- [Data Visualization](#data-visualization)
 - [Results](#results)
+  - [Exploratory Data Analysis](#eda)
+  - [Topic Modeling](#topic-modeling) 
+  - [Sentiment Analysis](#sentiment-analysis) 
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -156,10 +158,20 @@ Sentiment analysis is an approach to identifying the emotional tone behind textu
 In this study, we used both VADER (rule-based model) from the NLTK library and Twitter-roBERTa (deep learning based)from the TRANSFORMERS package to examine the early users' attitude towards ChatGPT.
 
 
-## DATA-VISUALIZATION
+## RESULTS
+### EDA
+**Tweets about ChatGPT over time**
 
+<img src="Image/tweets_months.png" style="width:400px;height:300px"><img src="Image/tweents_week.png" style="width:400px;height:300px">
 
-## RESULTS 
+- When ChatGPT was first released, there were approximately 250,000 tweets discussing it in the first two weeks leading up to December 11, 2022.
+- The number of tweets mentioning ChatGPT in January 2023 was 1.65 times higher than the number of tweets in December 2022.
+- Starting on January 2, 2023 (Week 6), there was a significant increase in the amount of tweets discussing ChatGPT.
+- In week 9, the number of tweets related to ChatGPT reached its highest point in the past two monts (246,657). 
+
+### TOPIC-MODELING
+### SENTIMENT-ANALYSIS
+
 
 ## CONCLUSION
 
