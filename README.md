@@ -116,7 +116,7 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
 <li>Features: User ID, User Name, User Verification, User Location, User Followers, Tweet Text, Posted Timestamp, and Posed Language</li>
 <li>Number of tweets collected = 1,255,518</li>
 <li>December - 474,572 tweets | January - 780,946 tweets</li>
-
+<hr>
 ### DATA-PREPROCESSING
 <b> Data Cleaning </b> 
 - Merged collected datasets into a single dataframe and removed duplicate tweets.
@@ -157,6 +157,7 @@ Sentiment analysis is an approach to identifying the emotional tone behind textu
 
 In this study, we used both VADER (rule-based model) from the NLTK library and Twitter-roBERTa (deep learning based)from the TRANSFORMERS package to examine the early users' attitude towards ChatGPT.
 
+<hr>
 
 ## RESULTS
 ### EDA
@@ -166,8 +167,35 @@ In this study, we used both VADER (rule-based model) from the NLTK library and T
 
 - When ChatGPT was first released, there were approximately 250,000 tweets discussing it in the first two weeks leading up to December 11, 2022.
 - The number of tweets mentioning ChatGPT in January 2023 was 1.65 times higher than the number of tweets in December 2022.
-- Starting on January 2, 2023 (Week 6), there was a significant increase in the amount of tweets discussing ChatGPT.
-- In week 9, the number of tweets related to ChatGPT reached its highest point in the past two monts (246,657). 
+- In week 9 (1/21/2023-1/29/2023), the number of tweets related to ChatGPT reached its highest point in the past two monts (246,657). 
+
+**Users' Features**
+
+- Verification Status
+  - ChatGPT has been adopted by both verified and non-verified users on Twitter: Only 3.1% of ChatGPT users on Twitter are verified.
+<img src="Image/verification.png" style="width:350px;height:300px">
+
+- Followers
+  - Some high-profile Twitter users with millions of followers have expressed interest in ChatGPT, including Elon Musk, CNN, NYTimes, and others.
+<img src="Image/followers2.png" style="width:400px;height:300px">
+
+- Tweeting Frequency
+  - From December 2022 to January 2023, a total of 550,655 Twitter users tweeted about ChatGPT.
+  - Among these users, 63.42% tweeted only once, while 36.58% tweeted more than once.
+<img src="Image/tweets_frequency.png" style="width:800px;height:300px">
+
+- Countries
+  - 31.7% users tweeting about ChatGPT were from the United Stats.
+  - The top 5 countries where ChatGPT was discussed the most were United States, the United Kingdom, India, Japan, and France.
+  - ChatGPT has grabbed attention from users in over 150 countries worldwide.
+<img src="Image/country.png" style="width:800px;height:350px">
+
+- Languages
+  - Over 70% of users discussing ChatGPT were English speakers.
+  - Around 30% of tweets about ChatGPT were written in other languages, i.e. Japanese, Spanish, French, etc., indicating that ChatGPT is also functional in languages other than Engligh.
+
+<img src="Image/language.png" style="width:550px;height:500px">
+<hr>
 
 ### TOPIC-MODELING
 ### SENTIMENT-ANALYSIS
