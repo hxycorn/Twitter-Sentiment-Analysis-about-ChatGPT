@@ -210,18 +210,44 @@ After evaluating coherence score, comprehensibility of top keywords, and computa
 **Topics**
 
 Through a meticulous analysis of the top 20 keywords and hundreds of highly correlated tweets for each topic within the LDA topic modeling results, the study determined a descriptive and meaningful name for each topic. 
-
+The top 3 most discussed topics are:
+- T8 Impacts on Work and Efficiency
+- T5 ChatGTP's Issues and Reliability	
+- T1 ChatGPT's Cost and Access	
 
 <img src="Image/topic_list.png" style="width:800px;height:220px">
 
-<img src="Image/topic.png" style="width:800px;height:400px">
+<img src="Image/wordcloud.png" style="width:800px;height:400px">
 
 <hr>
 
 
 ### SENTIMENT-ANALYSIS
 
+- **Comparison of VADER and roBERTa**
+  - When comparing VADER and roBERTa, it was found that VADER struggled to identify many positive or negative words in tweerts, often resulting in a polarity score of 0. roBERTa was better at capturing the deeper meaning of a text, allowing it to distinguish between negative and neutral tweets with greater sensitivity.
+  - Based on the prediction results, VADER identified positive and neutral tweets as more common, while negative tweets were relatively infrequent (only 12.4%). However, roBERTa's results showed that the number of negative tweets almost doubled (24.1%).
+  - In terms of computational efficiency, VADER was significantly faster than roBERTa, taking only 0.49 seconds to analyze 5000 tweets, while roBERTa took 243.42 seconds on a personal desktop.
+
+Overall, VADER is a faster option, but may not capture the nuances of natural language as well as roBERTa. The choice between VADER and roBERTa will depend on the specific task requirements and available computational resources.
+
+<img src="Image/polarity.png" style="width:450px;height:300px"> 
+
+<img src="Image/sentiment1.png" style="width:750px;height:300px"> 
+
+- **Sentiment Over Time (based on roBERTa results)**
+<img src="Image/sentiment_time.png" style="width:750px;height:300px"> 
+
+- **Sentiment of Each Topics**
+  - Topic T8 **Impacts on Work and Efficiency** and T7 **Impacts on Future Business and Industry** received the most positive sentiment of approximate 50%, indicating people's optimism about the postive effects of ChatGPT on furture work and life.
+  - Topic T5 **ChatGPT's Issues and Reliability** and T9 **Impacts on Education and Academy** received relatively more negative sentiment, approximately 46% and 30%, resperctively. This indicates that there is room for improvement in terms of user experience, system stability, watermarking for preventing plagiarism, etc.
+
+  Overall, early users of ChatGPT expressed mainly positive or neutral sentiments regarding its performance in assisting human tasks in various domains, such as business analysis, software development, and NLP. However, a limited percentage of users expressed concerns about potential misuse of ChatGPT and its reliability. 
+<img src="Image/sentiment_topic.png" style="width:750px;height:300px"> 
+
+<hr>
 
 ## CONCLUSION
+
 
 ## REFERENCES
