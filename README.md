@@ -117,6 +117,7 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
 <li>Number of tweets collected = 1,255,518</li>
 <li>December - 474,572 tweets | January - 780,946 tweets</li>
 <hr>
+
 ### DATA-PREPROCESSING
 <b> Data Cleaning </b> 
 - Merged collected datasets into a single dataframe and removed duplicate tweets.
@@ -198,6 +199,26 @@ In this study, we used both VADER (rule-based model) from the NLTK library and T
 <hr>
 
 ### TOPIC-MODELING
+**Optimal Number of Topics and Iterations**
+
+After evaluating coherence score, comprehensibility of top keywords, and computational cost, the study determined the optimal number of topics (10) and iterations (60) for LDA analysis. 
+
+<img src="Image/topicnumber.png" style="width:450px;height:300px"> <img src="Image/iteration.png" style="width:400px;height:300px">
+
+<img src="Image/pyLDAvis.png" style="width:800px;height:500px">
+
+**Topics**
+
+Through a meticulous analysis of the top 20 keywords and hundreds of highly correlated tweets for each topic within the LDA topic modeling results, the study determined a descriptive and meaningful name for each topic. 
+
+
+<img src="Image/topic_list.png" style="width:800px;height:220px">
+
+<img src="Image/topic.png" style="width:800px;height:400px">
+
+<hr>
+
+
 ### SENTIMENT-ANALYSIS
 
 
