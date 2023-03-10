@@ -1,5 +1,7 @@
 # Twitter-Sentiment-Analysis-about-ChatGPT
 A quantitative study on over 1.25 million tweets about ChatGPT, employed data scrapping, data cleaning, EDA, topic modeling, and sentiment analysis.
+
+<img align="center" src="Image/wordcloud2.png" style="width:400px;height:300px">
 <hr>
 
 ## TABLE OF CONTENT
@@ -249,5 +251,16 @@ Overall, VADER is a faster option, but may not capture the nuances of natural la
 
 ## CONCLUSION
 
+This study focused on showcasing the discussions about ChatGPT on Twitter, utilizing a dataset comprising 1.25 million tweets by leveraging machine learning and text analytics. Exploratory data analysis was conducted first on the collected dataset to understand the characteristics of early ChatGPT users. Further, topic modeling was performed to identify the main topics, followed by quantitative sentiment analysis on each topic. The study provides valuable insights into the sentiments of early ChatGPT users and emphasizes the importance of continued research and conversation to develop best practises for the responsible use of large language models. 
+
+<hr>
 
 ## REFERENCES
+- Chandrasekaran, Ranganathan, et al. "Examining public sentiments and attitudes toward COVID-19 vaccination: infoveillance study using Twitter posts." JMIR infodemiology 2.1 (2022): e33909.
+- Haque, Mubin Ul, et al. "" I think this is the most disruptive technology": Exploring Sentiments of ChatGPT Early Adopters using Twitter Data." arXiv preprint arXiv:2212.05856 (2022).
+- Scraping Tweets with snscrape: https://github.com/rashidesai24/Analyzing-Twitter-Trends-On-COVID-19-Vaccinations#-data-coverage-
+- Topic Modeling: https://medium.com/@kurtsenol21/topic-modeling-lda-mallet-implementation-in-python-part-1-c493a5297ad2
+- Sentiment Analysis: https://medium.com/@amanabdulla296/sentiment-analysis-with-vader-and-twitter-roberta-2ede7fb78909
+
+<hr>
+
