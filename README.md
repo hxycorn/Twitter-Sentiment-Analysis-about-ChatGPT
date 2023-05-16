@@ -80,7 +80,7 @@ Using a mixed-method approach, analyze tweets from December 2022 to January 2023
   <tr>
     <td>Environments & Platforms</td>
     <td> </td> 
-    <td>Google Colab, Jupyter Notebook, Twitter</td>
+    <td>Google Colab, Databricks, Pyspark, Jupyter Notebook, Twitter</td>
   </tr>
 </table><br>
 
